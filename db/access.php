@@ -1,6 +1,6 @@
 <?php
-$capabilities = array (
-	'block/angela:myaddinstance' => array(
+$capabilities = array(
+	'block/la_dashboard:myaddinstance' => array(
 		'captype' => 'write',
 		'contextlevel' => CONTEXT_SYSTEM,
 		'archetypes' => array(
@@ -9,10 +9,10 @@ $capabilities = array (
 		'clonepermissionsfrom' => 'moodle/my:manageblocks'
 	),
 	
-	'block/angela:addinstance' => array(
+	'block/la_dashboard:addinstance' => array(
 		'riskbitmask' => RISK_SPAM | RISK_XSS,
 		'captype' => 'write',
-		'contextlevel' => CONTEXT_BLOCK,
+		'contextlevel' => CONTEXT_SYSTEM,
 		'archetypes' => array(
 			'editingteacher' => CAP_ALLOW,
 			'manager' => CAP_ALLOW
